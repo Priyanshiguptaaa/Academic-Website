@@ -1,0 +1,921 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <meta name=viewport content=“width=800”>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+
+    /* html { background-color: black; } */
+    
+    a:any-link {
+      /* color: #c9e2fa; */
+      color: rgb(11, 102, 206);
+      font-weight: 510;  
+      text-decoration: none;
+    }
+    
+    a:focus,
+    a:hover {
+      color: #0C90FF;
+      text-decoration: none;
+    }
+    
+    body {
+      background-color: rgb(255, 255, 255);
+      background-image: url("top-6.jpeg");
+      /* background-size: auto; */
+      background-size: 900px;
+      background-repeat:no-repeat;
+      background-position: center top; 
+      margin-top: 135px;
+    }
+
+    td,
+    th,
+    tr,
+    p,
+    a {
+      /* font-family: 'Lato', Verdana, Helvetica, sans-serif; */
+      font-family: 'Helvetica Neue', 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      color: rgb(32, 32, 32);
+    }
+
+    pmid {
+      font-family: 'Helvetica Neue', 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 16px;
+      color: rgb(32, 32, 32);
+    }
+    
+    strong {
+      font-family: 'Helvetica Neue', 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 900;
+      /* color: black; */
+    }
+    
+    heading {
+      font-family: 'Helvetica Neue', 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 24px;
+      color: black;
+    }
+
+    midheading {
+      font-family: 'Helvetica Neue', 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 20px;
+      color: black;
+    }
+
+    smallheading {
+      font-family: 'Helvetica Neue', 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 18px;
+      color: black;
+    }
+    
+    papertitle {
+      font-family: 'Helvetica Neue', 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 900;
+      color: black;
+    }
+    
+    name {
+      font-family: 'Helvetica Neue' 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 30px;
+      color: black;
+    }
+    
+    .one {
+      width: 160px;
+      height: 160px;
+      position: relative;
+    }
+    
+    .two {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+    
+    .fade {
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+    
+    span.highlight {
+      background-color: #ffffd0;
+    }
+
+    .bottom-padding {
+     margin-bottom: 40px;
+    }
+
+    .top-padding {
+     margin-top: 40px;
+    }
+
+    li{
+    margin: 10px 0;
+    }
+
+    ul 
+    {
+    line-height:1.25
+    }
+          
+    table.highlights tbody {
+            display: block;
+        }       
+    table.highlights tbody {
+          
+        /* Set the height of table body */
+        height: 400px; 
+          
+        /* Set vertical scroll */
+        overflow-y: auto;
+          
+        /* Hide the horizontal scroll */
+        overflow-x: hidden; 
+    }
+
+    .content_img{
+      position: relative;
+      /* width: 100%; */
+      /* height: 100%; */
+      /* height: 200px; */
+      float: center;
+      align-content: center;
+      /* margin-left: 0px; */
+      margin: auto;
+      -webkit-box-align:center;
+      -webkit-box-pack:center;
+      display:-webkit-box;
+      /* padding-left: 20px */
+      }
+
+    /* Child Text Container */
+    .content_img div{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: rgb(43, 51, 45);
+      color: white;
+      margin-bottom: 0px;
+      align-items: center;
+      font-family: 'Helvetica Neue', 'Lato', Verdana, Helvetica, sans-serif;
+      opacity: 0;
+      visibility: hidden;
+      /* -webkit-transition: visibility 0s, opacity 0.5s linear;  */
+      transition: visibility 0s, opacity 0.1s linear;
+      }
+
+    /* Hover on Parent Container */
+    .content_img:hover{
+      cursor: pointer;
+      }
+
+    .content_img:hover div{
+      width: 180px;
+      padding: 10px 10px;
+      visibility: visible;
+      opacity: 0.7;
+      border-radius: 3px; 
+      }
+
+    /* nav ul{height:200px; width:100%;}
+    nav ul{overflow:hidden; overflow-y:scroll;} */
+
+  </style>
+  <link rel="icon" type="image/jpg" href="image/logo.webp">
+  <title>Priyanshi Gupta - Research Associate @LCS2</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110060513-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110060513-1');
+  </script>
+
+</head>
+
+<body>
+  <table style="background-color: white; padding-right: 40px; padding-left: 40px;" width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+      <tr>
+        <td>
+          <table style="padding-right: 10px; padding-left: 10px;" width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="67%" valign="middle">
+                <p align="center" class="">
+                  <name>Priyanshi Gupta</name> <br>
+                  <b>priyanshig[at]iiitd.ac</b> <br>
+                  <!-- Office @ 4146, <a href="https://www.google.com/maps/place/Computer+Science+and+Engineering+Building/@32.8818051,-117.2357122,17z/data=!4m12!1m6!3m5!1s0x80dc06c3409a5d5f:0xa7dc3be7597d4d47!2sComputer+Science+and+Engineering+Building!8m2!3d32.8818006!4d-117.2335235!3m4!1s0x80dc06c3409a5d5f:0xa7dc3be7597d4d47!8m2!3d32.8818006!4d-117.2335235">CSE (EBU3B)</a> <br>
+                  UC San Diego -->
+                </p>
+                <p>
+
+                </p>
+                <p>I am currently working as a NLP Research Associate at <a href="https://lcs2.iiitd.edu.in/">the Laboratory for Computational Social Systems (LCS2)</a>, 
+                    an inter institute lab between IIT Delhi and IIIT-Delhi , where I am advised by <a href="https://faculty.iiitd.ac.in/~tanmoy/">Prof. Tanmoy Chakraborty</a>. 
+                    As my first project, I explored hate speech in electoral politics in India followed by an industry collaboration with <a href="https://lcs2.iiitd.edu.in/">RAxter</a> division of Crimson Interactive 
+                    to help build their inline citation classification system to support research scholars in various stages of their research. Currently, I am extending my knowledge 
+                    by working in the Hyperbolic Space on Multimodal Information Retrieval and Feed Item Recommendation in collaboration with <a href="https://lcs2.iiitd.edu.in/">SAMSUNG Research</a> 
+                    where I am forming a taxonomy for image, speech, and text data.
+
+                      My primary research interests lie in: <br> <br>
+                      - <strong>Computational Social Science</strong> <br>
+                      - <strong>Machine/Speech Translation</strong> <br>
+                      - <strong>AI in Law</strong> <br>
+                      - <strong>Financial NLP</strong> <br>
+                      - <strong>NLP Applications</strong> <br>
+                </p>
+                
+                  
+              </td>
+              <td width="33%" valign="middle" halign="middle" class="" style="text-align: center">
+                <img src="image/prop.png" height="200" style="border-radius: 5px">
+                <!-- <p align="middle">
+                    <font size="1">
+                      By <i>Note-to-Self</i><br/>
+                      <a href="https://mopa.org" style="font-size: 10">Museum of Photographic Arts (MOPA)</a> <br/>
+                      A fusion with piano notes and digital image
+                    </font>
+                </p> -->
+                <p align=middle style="line-height: 3px">
+                  <!-- <br> -->
+                  <!-- <a href="mailto:bmajumde@eng.ucsd.edu">Email</a> &nbsp/&nbsp -->
+                  <br>
+                  <a href="" style="font-size: 12">CV</a> &nbsp|&nbsp
+                  <a href="https://scholar.google.com/citations?user=XR4tdgYAAAAJ&hl=en" style="font-size: 12">Google Scholar</a> 
+                  &nbsp|&nbsp
+                  <a href="https://github.com/Priyanshiguptaaa" style="font-size: 12"> Github </a> &nbsp|&nbsp
+                  <a href="https://www.linkedin.com/in/priyanshiguptaaa/" style="font-size: 12"> LinkedIn </a> <br><br><br><br><br><br>
+                  <!-- &nbsp|&nbsp -->
+                  <!-- <a href="https://twitter.com/mbodhisattwa" style="font-size: 13"> Twitter </a> -->
+                  <a href="https://twitter.com/mbodhisattwa?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @mbodhisattwa</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </p>
+              </td>
+            </tr>
+        </tr>
+        </table>
+        
+        <table style="padding-right: 10px; padding-left: 10px; margin-top:20px" width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="100%" valign="top" align="left">
+            <!-- <p>
+              <span style="color:rgb(165, 33, 0);"><strong>I am on the job market for industry research internship positions starting Fall 2024 <em> (exp. graduation by May 2025)</em>.</strong></span>
+            </p> -->
+  
+            I have had wonderful experiences at:
+            <p style="padding-left: 30px; margin-top: 5">
+              <strong>[Sep 2021 - Dec 2022]</strong> <a href= https://allenai.org/aristo>The AI Institute, University of South Carolina (AIISC) </a> with <a href="https://allenai.org/team/peterc">Dr. Biplva Srivastava</a> working on <i>Reasoning and Summarization of Sensor Data</i>;<br>
+              <strong>[Feb 2022 - April 2022]</strong> <a href= https://ai.facebook.com/research/conversational-ai>SYSTRAN, Paris</a> with <a href="https://www.notebleue.org/">Dr. Josep Crego</a> working on <i>Speech Translation</i>;<br> 
+              <strong>[Oct 2021 - Jan 2022]</strong> <a href= https://www.microsoft.com/en-us/research/group/natural-language-processing>NVIDIA</a> with <a href="https://www.microsoft.com/en-us/research/people/sudhra/">Bharat Giddwani</a> working on <i>Automatic Speech Recognition for Hindi Speech</i>;<br>
+              <strong>[Feb 2021 - Aug 2021]</strong> <a href= https://ai.google/research/teams/algorithms-optimization>NOKIA</a> with <a href="https://ai.google/research/people/SandeepTata/"> Anil Panicker</a> and <a href="http://marc.najork.org/"> Neha Dwivedi</a> working on <i>Financial Document Translation</i>.  
+              <!-- researching on various generalization strategies for document understanding and information extraction -->
+              <!-- with <a href="https://ai.google/research/people/SandeepTata/">Sandeep Tata</a> and <a href="https://ai.google/research/people/106262/">Navneet Potti</a>. -->
+            </p>
+            <!-- <p>Previously, I graduated (2017) summa cum laude from <a href="http://www.iitkgp.ac.in/">IIT Kharagpur</a>, MS in Machine Learning. -->
+            <!-- I was advised by <a href="http://cse.iitkgp.ac.in/~animeshm/">Prof. Animesh Mukherjee</a> and <a href= http://cse.iitkgp.ac.in/~pawang/> Prof. Pawan Goyal</a>. -->
+            <!-- Before joining UC San Diego, I was a Research Engineer at <a href="http://walmartlabs.com/">Walmart Labs</a> building large-scale NLP and ML applications for eCommerce. -->
+            I graduated in 2022 with a Bachelors in Technology in Computer Science from Guru Gobind Singh Indraprastha University (GGSIPU) and my thesis on
+             "Visual Question Answering" was selected for the <b>Best Major Project Award</b> by the university.
+               <!-- During 2016-2018, I actively collaborated with <a href="http://www.cnergres.iitkgp.ac.in/">CNeRG</a>, the NLP-Complex Network Group at IIT Kharagpur. -->
+            </p>
+            </td>
+          </tr>
+        </table>
+
+
+        <table width="100%" align="right" border="0" cellspacing="0" cellpadding="10" style="border-collapse: collapse; margin-top:30px">
+          <tr style="border-bottom: 2px solid rgb(192, 192, 192)">
+          <td width="100%" valign="top" align="middle">
+            <a href="#research"><b>Publications</b></a> &emsp;<span>&#183;</span>&emsp;
+            <a href="#experiences"><b>Experiences</b></a> &emsp;<span>&#183;</span>&emsp;
+            <!-- <a href="#awards"><b>Awards</b></a> &emsp;<span>&#183;</span>&emsp; -->
+            <a href="#education"><b>Education</b></a> 
+            <!-- <a href="#book"><b>Book</b></a> &emsp;<span>&#183;</span>&emsp; -->
+            <!-- <a href="#talks"><b>Talks</b></a> -->
+            <!-- <td width="25%" valign="top" align="right">
+                <pmid><a href="#experiences"><b>Experiences</b></a></pmid>
+              <td width="25%" valign="top" align="right">
+                  <pmid><a href="#bookntalk"><b>Awards</b></a></pmid>
+                  <td width="25%" valign="top" align="right">
+                    <pmid><a href="#bookntalk"><b>Book & Talks</b></a></pmid> -->
+            </td>
+          </td>
+          </td>
+          </tr>
+        </table>
+
+        <table style="padding-right: 10px; padding-left: 10px; margin-top:20px" width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="100%" valign="top" align="left">
+        
+
+        <div class="content_img" style="width: 800px; align-items: center;">
+          <!-- <a href="website_summary_ai.png"> -->
+          <!-- <img src="website_summary_ai.png" width="800px" display="block" style="border-radius: 6px; margin-top:15px; margin-top:10px align-items: center;"> -->
+         <div>Expand research overview</div>
+        </a>
+       </div>
+        <p>
+        <!-- <midheading><b>Research Summary</b></midheading>
+        <p>
+        Machine understanding often suffers from the lack of world knowledge [Richard Feynman: <a href="https://youtu.be/ipRvjS7q1DI?t=22">can machines think?</a>], making them less reliable and potentially risky. My <strong>research goal</strong> is to <em>develop <strong>human-centric AI</strong> systems by augmenting world knowledge for <strong>effective</strong>, <strong>explainable</strong>, and <strong>equitable</strong> outcomes.</em>
+        </p>
+                <ul>
+                <li><strong>Interactive and Dialog Systems:</strong> developing knowledge-grounded dialog systems to improve engagingness, trust, and ability to achieve conversational goals, integrating interactive user-feedback to improve model outcomes; talks at <a href="https://underline.io/events/284/sessions/10687/lecture/49673-achieving-conversational-goals-with-unsupervised-post-hoc-knowledge-injection">ACL 2022</a>, <a href="acl_pabst_slides.pdf">ACL 2021</a>, <a href="https://assets-global.website-files.com/61398f0b3344b9d4ec0973b9/631a6afe36d630426a800015_Poster_SelfSupervisedBotPlayForConversationalRecommendationWithRationales%20-%20Shuyang%20Li.pdf">RecSys 2022</a></li>
+                <li><strong>Explainable AI:</strong> generating faithful natural language explanations, conversational teachable reasoning systems, controlling bias for fair and interpretable outcomes; talk at <a href="https://slideslive.com/38983200">ICML 2022</a></li>
+                <li><strong>Seeking Clarifications:</strong> generating clarification questions to elicit in-context missing knoweldge, recongnizing and completing missing contexual knowledge; talk at <a href="https://underline.io/events/122/sessions/4240/lecture/19646-ask-what%E2%80%99s-missing-and-what%E2%80%99s-useful-improving-clarification-question-generation-using-global-knowledge">NAACL 2021</a></li>
+                <li><strong>Personalized Generation and Knowledge Grounding: </strong>acquiring user-specific knowledge and injecting them ante- and post-hoc in NLP models; talks/papers at <a href="https://underline.io/events/284/sessions/10687/lecture/49673-achieving-conversational-goals-with-unsupervised-post-hoc-knowledge-injection">ACL 2022</a>, <a href="acl_pabst_slides.pdf">ACL 2021</a>, <a href="EMNLP_2020_COMPAC_slides.pdf">EMNLP 2020</a></li>
+              </ul>
+        <p>
+        For complete details, please follow the <a href="bodhi_talk_for_distribution.pdf">representative talk</a> or access the <a href="Research_Summary.pdf">research summary</a>.
+        </p> -->
+        </table>
+
+        <!-- <div style="width: 800px; align-items: center;"> -->
+          <!-- <tr>
+            <td width="100%" valign="middle" align="center"> -->
+              <!-- <embed src="thesis_summary.pdf" width="800px" height="452px" /> -->
+
+              <!-- <iframe
+                src="thesis_summary.pdf"
+                frameBorder="0"
+                scrolling="auto"
+                width="100%"
+                height="100%"
+              ></iframe> -->
+
+        <br>
+        <heading><b>Highlights</b></heading> <br>
+        <font size="2">(scroll for more)</font> 
+        <!-- <table class="table highlights" width="100%" align="center" border="0" cellspacing="0" cellpadding="10" style="margin-top: 5px">
+          <tr>
+            <td width="100%" valign="middle"> -->
+        <div style="width: 800px; height: 250px; overflow-x: scroll; overflow-y: scroll; margin-top: 10px; margin-bottom: 15px; background-color: rgb(236, 236, 236); padding: 10px; border-radius: 6px">
+          <!-- <tr>
+            <td width="100%" valign="middle"> -->
+              <strong>2022</strong>
+              <ul>
+                <li><span style="color:rgb(165, 33, 0);"><strong>[Nov]</strong></span> Paper w/ Zhouhang, Sammer, and Julian on factual explanations got in <a href="https://aaai.org/Conferences/AAAI-23/">AAAI</a>, 2023.</li>
+                <li><span style="color:rgb(165, 33, 0);"><strong>[Nov]</strong></span> Our RecSys paper got recognized as <em><strong>Hightlights of ACM Recsys '22</strong></em>.</li>
+                <li><strong>[Jan]</strong></span> Joining <a href= https://allenai.org/aristo>Allen Institute of AI (AI2)</a> in Summer 2022 to work with <a href="https://allenai.org/team/peterc">Peter Clark</a> on <i>interactive explanations</i>.</li>
+              </ul> 
+              <strong>2021</strong>
+              <ul>
+                <li><strong>[Sept]</strong> Joined GGSIPU as an undergraduate student in B-Tech Computer Science.</li>
+              </ul>
+              <strong>2020</strong>
+              <ul>
+                <li><strong>[Oct]</strong> Invited talk on <em>Achieving Commonsense in Text Generation</em> at NC State. See <a href=nc_state.pdf>slides</a> here.</li>
+              </ul>
+              <strong>2019</strong>
+              <ul>
+                <li><strong>[Sept]</strong> Joined GGSIPU as an undergraduate student in B-Tech Computer Science.</li>
+              </ul>
+              <strong>2018</strong>
+              <ul> 
+                <li><strong>[Sept]</strong> Joined GGSIPU as an undergraduate student in B-Tech Computer Science.</li>
+              </ul>
+            <!-- </td>
+          </tr> -->
+        </div>
+        
+        <br>
+        <!-- <br> -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Publications</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		
+            <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <img src='image/pol.png' width="160" height="120">
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="_blank">
+                    <papertitle style="font-size: larger;">The "Golden Potatoes" of Indian Politics: Analysing Political Attacks on Twitter During Assembly Elections 2022
+                    </papertitle>
+                  </a>
+                  <br>
+                  <!-- <a href="https://www.aclweb.org/anthology/2021.louhi-1.10/" target="_blank">paper</a> /  -->
+                      <!-- <a href="" target="_blank">code</a> /  -->
+                      <!-- <a href="data/bib/kulkarni-etal-2021-cluster.txt" target="_blank">bibtex</a> -->
+                  <br>
+                   Sarah Masud*, <strong>Priyanshi Gupta*</strong>, Disha Sharma, Tanmoy Chakraborty
+                  <br>
+                  </p>
+                  <em style="color: rebeccapurple;">Under Review</em>  
+                  <br>
+                  <p></p>
+                </td>
+              </tr>
+
+            <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <img src='image/3c.jpeg' width="160" height="120">
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="_blank">
+                    <papertitle style="font-size: larger;">PeriCite: Inline Citation Classification using Peripheral Context and Time-evolving Augmentation
+                    </papertitle>
+                  </a>
+                  <br>
+                  <!-- <a href="https://www.aclweb.org/anthology/2021.louhi-1.10/" target="_blank">paper</a> /  -->
+                      <!-- <a href="" target="_blank">code</a> /  -->
+                      <!-- <a href="data/bib/kulkarni-etal-2021-cluster.txt" target="_blank">bibtex</a> -->
+                  <br>
+                   <strong>Priyanshi Gupta*</strong>, Yash Kumar Atri*, Sourish Das Gupta, Tanmoy Chakraborty
+                  <br>
+                  </p>
+                  <em style="color: rebeccapurple;">Under Review</em>  
+                  <br>
+                  <p></p>
+                </td>
+              </tr>
+
+            <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <img src='image/animoj.png' width="160" height="120">
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="_blank">
+                    <papertitle style="font-size: larger;">AniMOJity: Detecting Hate Comments in Indic languages and Analysing Bias against Content Creators
+                    </papertitle>
+                  </a>
+                  <br>
+                  <!-- <a href="https://www.aclweb.org/anthology/2021.louhi-1.10/" target="_blank">paper</a> /  -->
+                      <!-- <a href="" target="_blank">code</a> /  -->
+                      <!-- <a href="data/bib/kulkarni-etal-2021-cluster.txt" target="_blank">bibtex</a> -->
+                  <br>
+                   Rahul Khurana*, Chaitanya Pandey*, <strong>Priyanshi Gupta*</strong>, Preeti Nagrath
+                  <br>
+                  </p>
+                  <em style="color: rebeccapurple;">International Conference on Natural Language Processing (ICON 2022)</em>  
+                  <br>
+                  <p></p>
+                </td>
+              </tr>
+	
+		 <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='image/trans.png' width="160" height="120">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="_blank">
+                <papertitle style="font-size: larger;">Translate2Classify: Machine Translation for E-Commerce Product Categorization in comparison to Machine Learning & Deep Learning Classification
+                </papertitle>
+              </a>
+              <br>
+              <a href="https://www.aclweb.org/anthology/2021.louhi-1.10/" target="_blank">paper</a> / 
+                  <a href="" target="_blank">code</a> / 
+                  <a href="data/bib/kulkarni-etal-2021-cluster.txt" target="_blank">bibtex</a>
+              <br>
+               <strong>Priyanshi Gupta</strong>, Shatakshi Raman
+              <br>
+              </p>
+              <em style="color: rebeccapurple;">International Conference on Data Analysis and Management (ICDAM 2021)</em>  
+              <br>
+              <p></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='image/checkers.png' width="160" height="120">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="_blank">
+                <papertitle style="font-size: larger;">American Checkers Game using Game Theory and Artificial Intelligent Algorithms
+                </papertitle>
+              </a>
+              <br>
+              <a href="https://www.aclweb.org/anthology/2021.louhi-1.10/" target="_blank">paper</a> / 
+                  <a href="" target="_blank">code</a> / 
+                  <a href="data/bib/kulkarni-etal-2021-cluster.txt" target="_blank">bibtex</a>
+              <br>
+               <strong>Priyanshi Gupta</strong>, Vividha, Preeti Nagrath
+              <br>
+              </p>
+              <em style="color: rebeccapurple;">Book Chapter in "Deep Learning in Gaming and Animations: Principles & Applications</em>  
+              <br>
+              <p></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='image/stock.png' width="160" height="120">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="_blank">
+                <papertitle style="font-size: larger;">An Empirical Research and Comprehensive Analysis of Stock Market Prediction using Machine Learning and Deep Learning Techniques
+                </papertitle>
+              </a>
+              <br>
+              <a href="https://www.aclweb.org/anthology/2021.louhi-1.10/" target="_blank">paper</a> / 
+                  <a href="" target="_blank">code</a> / 
+                  <a href="data/bib/kulkarni-etal-2021-cluster.txt" target="_blank">bibtex</a>
+              <br>
+               Aryendra Singh,<strong>Priyanshi Gupta</strong>, Narina Thakur
+              <br>
+              </p>
+              <em style="color: rebeccapurple;">International Conference on Computational Research and Data Analytics (ICCRDA 2020)</em>  
+              <br>
+              <p></p>
+            </td>
+          </tr>
+          
+        </tbody></table>
+
+
+        <table id="experiences" width="100%" align="center" border="0" cellspacing="0" cellpadding="10" style="margin-top:10px">
+            <tr>
+              <td width="100%" valign="middle">
+                <heading><b>Experiences</b></heading>
+              </td>
+            </tr>
+        </table> 
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10" style="border-collapse: collapse">
+          <tr style="border-bottom: 1px solid rgb(192, 192, 192);">
+            <td width="10%" align="center"><img src="work/lcs2.png" alt="PontTuset" width="100" style="border-style: none">
+              <td width="100%" valign="top">
+                  <p><papertitle>The Laboratory of Computational Social Systems (LCS2), Delhi, India</papertitle>  
+                    <br>
+                    July 2022 - Present
+                    <br>
+                    <strong>Research Associate</strong> <em>with</em> <a href="https://www.notebleue.org/">Dr. Tanmoy Chakraborty</a> 
+                  </p>
+                  <p style="color:rgb(110, 110, 110)">
+                    - Worked on Hate Speech in Electoral Politics <br>
+                    - Developed an industry level citation classfication system for RAxter<br>
+                    - Working on Automated Taxonomy Generation in the Hyperbolic Space for Samsung
+                  </p>
+              </td>
+          </tr>
+
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10" style="border-collapse: collapse">
+            <tr style="border-bottom: 1px solid rgb(192, 192, 192);">
+              <td width="10%" align="center"><img src="work/samsung.png" alt="PontTuset" width="100" style="border-style: none">
+                <td width="100%" valign="top">
+                    <p><papertitle>Samsung Research, India</papertitle>  
+                      <br>
+                      Dec 2022 - Present
+                      <br>
+                      <strong>Project Associate</strong> <em> as an indsutry collaboration at LCS2</em> 
+                      
+                    </p>
+                    <p style="color:rgb(110, 110, 110)">
+                      - Devloping a Multimodal Feed Recommendation System in the Hypoerbolic space.
+                    </p>
+                </td>
+            </tr>
+
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10" style="border-collapse: collapse">
+                <tr style="border-bottom: 1px solid rgb(192, 192, 192);">
+                  <td width="10%" align="center"><img src="work/Rax.png" alt="PontTuset" width="100" style="border-style: none">
+                    <td width="100%" valign="top">
+                        <p><papertitle>Rax, Crimson Interactive, India</papertitle>  
+                          <br>
+                          July 2022 - Present
+                          <br>
+                          <strong>Associate Researcher</strong> <em>as an indsutry collaboration at LCS2</em> 
+                        </p>
+                        <p style="color:rgb(110, 110, 110)">
+                          - Devloped a novel production level Citation Classfication System. <br>
+                          - Working on Paraphrasing a summary.
+                        </p>
+                    </td>
+                </tr>
+
+            <tr style="border-bottom: 1px solid rgb(192, 192, 192);">
+              <td width="10%" align="center"><img src="work/aiisc.png" alt="PontTuset" width="100" style="border-style: none">
+                <td width="100%" valign="top">
+                    <p><papertitle>The AI Institute, University of South Carolina</papertitle>  
+                      <br>
+                      Sep 2021 - Nov 2022
+                      <br>
+                      <strong>Research Intern</strong> <em>with</em> <a href="https://sites.google.com/site/biplavsrivastava/">Dr. Biplav Srivastava</a> 
+                    </p>
+                    <p style="color:rgb(110, 110, 110)">
+                      Summarized interesting insights from the hospital's sensor data by introducing a novel architecture based on question 
+                      generation and ranking, numerical reasoning, and answer generation as a summary.
+                    </p>
+                </td>
+            </tr>
+
+            <tr style="border-bottom: 1px solid rgb(192, 192, 192);">
+              <td width="10%" align="center"><img src="work/systran.png" alt="PontTuset" width="100" style="border-style: none">
+                <td width="100%" valign="top">
+                    <p><papertitle>SYSTRAN, Paris</papertitle>  
+                      <br>
+                      Summer, 2020
+                      <br>
+                      <strong>Research Engineer Intern</strong> <em>with</em> <a href="https://scholar.google.com/citations?user=lw_aQqQAAAAJ&hl=en">Dr. Joseph Crego</a> 
+                      
+                    </p>
+                    <p style="color:rgb(110, 110, 110)">
+                     Develped a robust speech translation model using OpenNMT with a model performance of 35% for <b>en-de</b> by introducing quasi homophones as noise 
+                    </p>
+                </td>
+            </tr>
+          
+            <tr style="border-bottom: 1px solid rgb(192, 192, 192);">
+                <td width="10%" align="center"><img src="work/nvidia.png" alt="PontTuset" width="100" style="border-style: none">
+                  <td width="90%" valign="top">
+                      <p><papertitle>NVIDIA, Bangalore</papertitle>  
+                        <br>
+                        Oct 2021 - Jan 2022
+                        <br>
+                        <strong>Deep Learning Engineer Intern</strong> 
+                        <br>
+                      </p>
+                      <p>
+                        
+                        <!-- , <a href="https://www.indiawest.com/news/business/two-indian-american-students-lead-university-teams-in-alexa-prize/article_cd45e8d6-2e63-11ea-9b27-97ba7f603b81.html">India West</a> -->
+                      </p>
+                      <p style="color:rgb(110, 110, 110)">
+                        Evaluated Jasper and Citrinet (ASR models) and optimized them for Hindi speech using the Nemo toolkit.
+                      </p>
+                  </td>
+              </tr>
+
+            <tr style="border-bottom: 1px solid rgb(192, 192, 192);">
+              <td width="10%" align="center"><img src="work/nokia.jpeg" alt="PontTuset" width="90" style="border-style: none">
+                <td width="90%" valign="top">
+                  <p><papertitle>NOKIA, Gurgugram</papertitle>  
+                    <br>
+                    Feb 2021
+                    <br>
+                    <strong>Data Science Intern</strong>
+                    
+                  </p>
+                  <p style="color:rgb(110, 110, 110)">
+                    Developed a tool to translate Multilingual Financial Document PDFs using Tesseract & EasyNMT.
+                  </p>
+                </td>
+            </tr>
+  
+            <tr style="border-bottom: 1px solid rgb(192, 192, 192);">
+              <td width="10%" align="center"><img src="work/grroom.jpeg" alt="PontTuset" width="100" style="border-style: none">
+                <td width="90%" valign="top">
+                    <p><papertitle>GRROOM, IIT Bombay</papertitle>  
+                      <br>
+                      July 2020 - Oct 2020
+                      <br>
+                      <strong>Machine Learning Intern</strong>
+                      
+                    </p>
+                    <p style="color:rgb(110, 110, 110)">
+                      Assisted a fashion-tech startup to build the "World's First AI Fashion Stylist" by managing the teams, solving problems and contributing to the AI model.
+                    </p>
+                </td>
+            </tr>
+            <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+              <tr>
+                <td width="100%" valign="middle">
+                  <midheading><b>Services</b></midheading>
+                  <ul>
+                    <li><strong>Co-PI</strong> for REU site project at UCSD for mentoring undergrads from local community college and low-income groups</li>
+                    <li><strong>Volunteer</strong> at ICML 2022</li>
+                    <li><strong>Co-organizer</strong> of <a href="https://sites.google.com/view/repl4nlp2022/">7th Workshop on Representation Learning for NLP (RepL4NLP)</a> at ACL 2022 (Dublin)</li>
+                    <li><strong>Co-organizer</strong> of <a href="https://csrr-workshop.github.io/">Workshop on Commonsense Representation and Reasoning (CSRR)</a> at ACL 2022 (Dublin)</li>
+                    <li><strong>Organizer</strong> and PC member of <a href="https://cseweb.ucsd.edu/~jmcauley/workshops/scmls20/">SoCal Machine Learning Symposium, 2020</a> at UCSD</li>
+                    <li><strong>Program Committee:</strong> EMNLP 2022, NAACL 2022, ACL 2022, ICML 2022, NeurIPS 2021, EMNLP 2021, ACL 2021, ICML 2021, AACL-IJCNLP 2020, ICML 2020, INLG 2019</li>
+                  </ul>
+                </td>
+              </tr> -->
+            <!-- </table> -->
+            <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+              <tr>
+                <td width="100%" valign="middle">
+                  <midheading><b>Mentees</b></midheading>
+                  <ul>
+                    <li>Zexue He, PhD CSE @ UCSD</li>
+                    <li>Zhouhang Xie, MS CSE @ UCSD</li>
+                    <li>Manish Borthakur, Math @ IIT Delhi</li>
+                    <li>Shivam Lakhotia, MS, CSE @ UCSD</li>
+                    <li>Kunal Jain, MS, CSE @ UCSD</li>
+                    <li>Astuti Sharma, MS, CSE @ UCSD</li>
+                    <li>Maximilian Halvax and Tatum Maston, Undergraduate, HDSI @ UCSD, as a part of HDSI scholar program</li>
+                  </ul>
+                </td>
+              </tr>
+            </table> -->
+
+            <!-- <table id="awards" width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+              <tr>
+                <td width="100%" valign="middle">
+                  <heading><b>Awards</b></heading>
+                  <ul>
+                    <li><strong>[2022]</strong> <em></em> of TrustNLP Travel Grant award for NAACL 2022</li>
+                    <li><strong>[2022]</strong> <em>Receipient</em> of <a href="https://research.adobe.com/fellowship/">UCSD CSE Doctoral Award for Excellence in Research</a>, 2022</li>
+                    <li><strong>[2022]</strong> <em>Paper Accepted</em> of <a href="https://research.adobe.com/fellowship/">Adobe Research Fellowship</a>, 2022</li>
+
+                  </ul>
+                </td>
+              </tr>
+            </table> -->
+        
+            <table id="education" width="100%" align="center" border="0" cellspacing="0" cellpadding="10" style="margin-top:20px">
+              <tr>
+                <td width="100%" valign="middle">
+                  <heading><b>Education</b></heading>
+                </td>
+              </tr>
+          </table>
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10" style="border-collapse: collapse">
+            <tr style="border-bottom: 1px solid rgb(192, 192, 192);">
+                <tr style="border-bottom: 1px solid rgb(192, 192, 192);">
+                  <td width="10%" align="center"><img src="uni_img/ggsipu.png" alt="PontTuset" width="80" style="border-style: none">
+                    <td width="90%" valign="top">
+                        <p><papertitle>B-Tech, Computer Science and Engineering</papertitle> 
+                          <br>
+                          <em>Guru Gobind Singh Indraprastha University (GGSIPU)</em>
+                          <br> 
+                          2018-2022
+                          <br>
+                          <p style="color:rgb(110, 110, 110)">
+                            <strong>CGPA: 3.8/4.0</strong>; Courses: Operating Systems, Artificial Intelligence, Data Structures, Software Engineering
+                        </p>
+                    </td>
+                </tr>
+
+                <tr style="border-bottom: 1px solid rgb(192, 192, 192);">
+                  <td width="10%" align="center"><img src="uni_img/warwick.webp" alt="PontTuset" width="80" style="border-style: none">
+                    <td width="90%" valign="top">
+                        <p><papertitle>Summer School, Data Science and Machine Learning</papertitle> 
+                          <br>
+                          <em>University of Warwick in London</em>
+                          <br> 
+                          2019-2019
+                          <br>
+                          <p style="color:rgb(110, 110, 110)">
+                            <strong>Grade: A+</strong> Guided by <a href="http://cse.iitkgp.ac.in/~animeshm/">Prof. Florin Cuicu</a>. Courses:  R, Statistics, Machine Learning, Recommendations in Social Networks
+                        </p>
+                    </td>
+                </tr>
+
+        <!-- <table id="book" width="100%" align="center" border="0" cellspacing="0" cellpadding="10" style="margin-top:30px">
+            <tr>
+              <td width="100%" valign="middle">
+                <heading><b>Book: Practical Natural Language Processing by O'Reilly</b></heading>
+              </td>
+            </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10" style="border-collapse: collapse">
+            <tr>
+                <td width="25%" align="center"><img src="bookcover.jpg" alt="PontTuset" width="130" style="border-style: none">
+                  <td width="75%" valign="top">
+                      <p><papertitle>Practical Natural Language Processing</papertitle>  
+                        <br>
+                        O'Reilly Media, <em>2020</em>
+                        <br>
+                        Sowmya Vajjala, <i><u>Bodhisattwa P. Majumder</u></i>, Anuj Gupta, Harshit Surana
+                        <br>
+                        <a href="https://www.amazon.com/Practical-Natural-Language-Processing-Pragmatic-dp-1492054054/dp/1492054054/ref=mt_other?_encoding=UTF8&me=&qid=1592972893">amazon</a> | 
+                        <a href="https://learning.oreilly.com/library/view/practical-natural-language/9781492054047/">safari online</a> |
+                        <a href="http://www.practicalnlp.ai/">website</a>
+                        
+                      </p>
+                      <p style="color:rgb(110, 110, 110)">
+                          Practical Natural Language Processing
+                          is a guide to build, iterate and scale NLP systems in a business setting and to tailor them for various industry verticals. The book 
+                          distills our collective wisdom on building real world applications such as data collection, working with noisy data and signals, incremental development of solutions, and issues involved in deploying the solutions as a part of a larger application - bridging a gap between current textbooks and online offerings.
+                          <br><br>
+                          <strong>Highlights:</strong><br>
+                          <ul>
+                          <li>Endorsed by Zach Lipton, Sebastian Ruder, Marc Najork et al. </li>
+                          <li>#1 Best seller in Amazon.com in Data Mining category </li>
+                          <li>#1 New release in Amazon.com in Natural Language Processing category </li>
+                          <li>Read and adapted by 20+ AI companies and 6 academic courses internationally</li>
+                          </ul> 
+                      </p>
+                  </td>
+              </tr> -->
+<!-- 
+        <table id="talks" width="100%" align="center" border="0" cellspacing="0" cellpadding="10" style="margin-top:30px">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading><b>Talks</b></heading>
+              <p>
+                <papertitle>Effective, Explainable, and Equitable NLP with Knowledge and Interactions</papertitle> | <a href="">slides</a><br>
+                <ul>
+                  <li>[2022] at Allen Institute of AI</li>
+                  <li>[2022] at University of Southern California/USC-ISI</li>
+                  <li>[2022] at Harvard University/Harvard Business School</li>
+                  <li>[2022] at University College London</li>
+                  <li>[2022] at UC Irvine</li>
+                  <li>[2022] at University of British Columbia</li>
+                  <li>[2022] at UC San Diego</li>
+                </ul>
+              </p>
+              <p>
+                <papertitle>Producing Explanations with Commonsense and Interactions</papertitle> | <a href="ai2_talk.pdf">slides</a><br>
+                 | <a href="fair_nlg_com.pdf">slides</a><br> 
+                <ul>
+                  <li>[2022] at AI Research Seminar, UC San Diego</li>
+                  <li>[2021] at Allen Institute of AI</li>
+                  <li>[2021] at Machine Learning Group, Oxford University</li> 
+                </ul>
+              </p>
+              <p>
+                <papertitle>Explainable Language Generation with Commonsense</papertitle> | <a href="fair_nlg_com.pdf">slides</a><br>
+                <ul>
+                  <li>[2021] at Facebook AI Research</li>
+                  <li>[2021] at Machine Learning Group, Oxford University</li>
+                </ul>
+              </p>
+              <p>
+                <papertitle>Grounding Language Generation with World Knowledge</papertitle> | <a href=comgen_talk_short.pdf>slides</a><br>
+                <ul>
+                  <li>[2021] at Microsoft Research, India</li>
+                  <li>[2021] at IIT Kharapgur</li>
+                  <li>[2020] at NC State, AI Club</li>
+                  <li>[2020] at INFORMS 2020, Mining and Learning on Graphs session, Washington, DC</li>
+                </ul>
+                </p>
+              <p>
+              <papertitle>Clarification Question Generation using Global Knowledge</papertitle> | <a href=qgen_talk_msr.pdf>slides</a><br>
+              <ul>
+                <li>[2021] at Microsoft Research, Redmond</li>
+                <li>[2021] at AI Research Seminar, UC San Diego</li>
+              </ul>
+              </p>
+              <p>
+                <papertitle>Personalization, NLP and others</papertitle>
+                <ul>
+                  <li>[2020] at UC San Diego, CSE Research Open House, on Personalization in Natural Language Generation</li>
+                  <li>[2018] at Indian Inst of Management Calcutta, Industry Conclave & Graduate Orientation, on NLP - a primer</li>
+                  <li>[2017] at Walmart Labs, on Information Extraction from Images - Application in e-Commerce</li>
+                <li>[2017] at Indian Statistical Institute, on Deep Neural Network: in light of Optimization and Regularization</li>
+                </ul>
+                </p> 
+                <li><strong>[2021]</strong> at IIT Kharagpur on <strong>Grounding Language Generation with World Knowledge</strong></li>
+                <li><strong>[2021]</strong> at Microsoft Research, India on <strong>Grounding Language Generation with World Knowledge</strong> (<a href=comgen_talk_short.pdf>slides</a>)</li>
+                <li><strong>[2020]</strong> at NC State, AI club on <strong>Achieving Commonsense in Text Generation</strong> (<a href=nc_state.pdf>slides</a>)</li>
+                <li><strong>[2020]</strong> at INFORMS 2020, Mining and Learning on Graphs session in Washington, DC (<a href=informs2020.pdf>slides</a>)</li> 
+                <li><strong>[2020]</strong> at UC San Diego, CSE Research Open House, on Personalization in Natural Language Generation</li>
+                <li><strong>[2018]</strong> at Indian Inst of Management Calcutta, Industry Conclave & Graduate Orientation, on NLP - a primer</li>
+                <li><strong>[2017]</strong> at Walmart Labs, on Information Extraction from Images - Application in e-Commerce</li>
+                <li><strong>[2017]</strong> at Indian Statistical Institute, on Deep Neural Network: in light of Optimization and Regularization</li> 
+              </ul>
+            </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td>
+              <br>
+              <p align="right">
+                <font size="1">
+                  Thanks to <a href=https://jonbarron.info style="font-size: 10px">Jon Barron</a> for this nice template!<br>
+                  <!-- Comic strip from <a href= https://www.explainxkcd.com/wiki/index.php/948:_AI style="font-size: 10px">xkcd</a><br>  -->
+                  <!-- Geisel Library cover art from <a href=https://pixels.com/profiles/mb-artfactory.html style="font-size: 10px">here</a> -->
+                  Gorgeous Geisel Library cover art from <a href=https://www.reddit.com/r/architecture/comments/i5ju33/geisel_library_me_pen_2018/ style="font-size: 10px">here</a>.
+                  </font>
+              </p>
+            </td>
+          </tr>
+        </table>
+        </td>
+    </tr>
+  </table>
+</body>
+
+</html>
